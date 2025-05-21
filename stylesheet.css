@@ -1,0 +1,374 @@
+/* Variabler til vores farver */
+:root {
+    --db: #3D3B8E;
+    --lb: #6883BA;
+    --lg: #D9D9D9;
+    --pink: #E072A4;
+    --mint: #B0E298;
+    --hvid: #fff;
+    --sort: #000;
+}
+
+body{
+    background-image: url('img/baggrund.png');
+    background-position: center;
+}
+
+        /* NAVBAR CSS/HEADER */
+.navbar{
+    background-color: var(--lb);
+    width: 100%;
+    padding: 15px;
+}
+
+.navbar-brand{
+    margin-left: 16px;
+}
+
+#aktiv-side{
+    color: var(--hvid);
+    text-decoration: underline;
+    text-decoration-color: var(--pink);
+    text-underline-offset: 10px;
+}
+
+.navbar-nav{
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.navbar-nav a:hover{
+    color: var(--pink);
+}
+
+a.nav-link{
+    color: var(--hvid);
+}
+
+        /* INDEX CSS STYLING */
+
+/* Videoknap css */
+
+#videoknap{
+    background-color: var(--db);
+    color: var(--hvid);
+}
+
+#videoknap:hover{
+    background-color: var(--pink);
+}
+
+/* om os sektion */
+#los-h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: -30px;
+}
+
+.billede-af-os{
+    max-width: 100%;
+    height: auto;
+}
+
+#container-om-os{
+    margin-top: 100px;
+}
+
+#tekst-om-os{
+    text-align: justify;
+}
+
+#om-os-knap{
+    background-color: var(--db);
+    color: var(--hvid);
+}
+
+#om-os-knap:hover{
+    background-color: var(--pink);
+}
+
+/* sponser afsnit */
+
+.sponsor-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    background-color: var(--mint);
+    padding: 90px; 
+}
+  
+.sponsor-carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-horizontal-loop 15s linear infinite;
+}
+  
+.sponsor-carousel-slide {
+    display: flex;
+}
+  
+.sponsor-carousel-slide img {
+    height: 60px;
+    margin: 0 40px;
+    object-fit: contain;
+}
+  
+@keyframes scroll-horizontal-loop {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+/* video intro forside css */
+
+#tekst-forside-vid{
+    text-align: justify;
+}
+
+#container-elastico-intro{
+    margin-top: 100px;
+}
+
+        /* OM OS SIDE CSS */
+
+#om-os-h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: -30px;
+}
+
+#container-om-os-side{
+    margin-top: 100px;
+}
+
+#tekst-om-os-side{
+    text-align: justify;
+}
+
+
+        /* LÆRINGSVIDEOER og UNDERSIDEVIDEOER CSS */
+#container-lv-side{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#lv-h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#info-tekst-lv{
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#kat-knap{
+    background-color: var(--db);
+    color: var(--hvid);
+}
+
+#kat-knap:hover{
+    background-color: var(--pink);
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+#tilbage{
+    background-color: var(--db);
+    color: var(--hvid);
+    margin-left: 130px;
+    padding: 10px 20px;
+    font-family: 'Gill Sans';
+    font-weight: bold;
+}
+
+#tilbage:hover{
+    background-color: var(--pink);
+}
+
+    /* KONTAKT SIDE CSS */
+.contact-section {
+    min-height: calc(100vh - 400px);
+}
+
+.contact-form {
+    background-color: var(--hvid);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Input felt styling */
+.contact-form .form-control,
+.contact-form .form-select {
+    border: 1px solid var(--sort);
+    padding: 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Fokus tilstand på input felter */
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--sort);
+    box-shadow: 0 0 0 0.2rem rgba(78, 112, 70, 0.25);
+}
+
+/* Success og error beskeder */
+.alert-success {
+    background-color: var(--hvid);
+    border-color: var(--lg);
+    color: var(--mint);
+}
+
+.alert-danger {
+    background-color: var(--hvid);
+    border-color: var(--lg);
+    color: var(--pink);
+}
+
+        /* FOOTER CSS */
+.footer {
+    background-color: var(--lb);
+    color: var(--hvid);
+    width: 100%;
+}
+
+.social-links{
+    margin-right: 20px;
+}
+
+.footer .social-links a:hover {
+    cursor: pointer;
+}
+
+        /* BOLD LOADER CSS */
+.main-fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--hvid); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+  
+  
+.loader svg {
+    width: 60vw;
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+  
+.loader svg path {
+    animation-duration: 1s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    fill: var(--lb);
+}
+  
+  .loader svg .path-7 { animation-delay: -1s }
+  .loader svg .path-6 { animation-delay: -.875s }
+  .loader svg .path-5 { animation-delay: -.75s }
+  .loader svg .path-4 { animation-delay: -.625s }
+  .loader svg .path-3 { animation-delay: -.5s }
+  .loader svg .path-2 { animation-delay: -.375s }
+  .loader svg .path-1 { animation-delay: -.25s }
+  .loader svg .path-0 { animation-delay: -.125s }
+  
+@keyframes pulse {
+    0%     { opacity: .1; }
+    30%    { opacity: .8; }
+    100%   { opacity: .1; }
+}
+
+
+/* MEDIA QUERIES */
+
+    /* BOLD LOADER */
+@media (max-width: 500px) {
+    .loader svg {
+      width: 20vw;
+      max-width: 25vw;
+    }
+}
+
+    /* MOBIL FORSIDE - BILLEDE + VIDEO */
+@media (max-width: 430px) {
+    #video{
+        width: auto;
+        height: 200px;
+    }
+    #billede-tlf{
+        width: 400px;
+        height: auto;
+    }
+}
+
+    /* LÆRINGSVIDEOER + UNDERSIDER MEDIA QUERIES */
+@media (max-width: 500px) {
+    #lv-h1 {
+        justify-content: start;
+    }
+}
+
+@media (max-width: 820px) {
+    #lv-h1 {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    #tekst-vid-under p {
+        max-width: 350px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 820px) {
+    #tekst-vid-under {
+        max-width: 780px;
+    }
+}
+
+@media (max-width: 820px) {
+    #tilbage {
+        width: 30%;
+        margin-left: 30px;
+    }
+}
+
+    /* KONTAKT SIDE - MEDIA QUERIES */
+@media (max-width: 500px) {
+    #maps {
+        width: 100%;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+@media (max-width: 900px) {
+    #maps {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
